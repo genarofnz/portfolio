@@ -1,3 +1,32 @@
+# GIT CHEAT SHEET
+
+# Setup (solo una vez)
+git config --global user.name "Genaro Fuenzalida"
+git config --global user.email "genarofuenzalida@gmail.com"
+
+# Flujo diario
 git add .
-git commit -m "next-version"
+git commit -m "tipo: descripción corta"
 git push
+
+# Tipos de commit
+# feat:     algo nuevo
+# fix:      arreglé un bug
+# style:    cambios visuales
+# content:  actualicé texto
+# chore:    configuración/mantenimiento
+# docs:     documentación
+# refactor: reorganicé código
+
+# Branches
+git checkout main          # ir a producción
+git checkout staging       # ir a staging
+git checkout -b nombre     # crear branch nuevo
+
+# Pasar staging a producción
+git checkout main
+git merge staging
+git push
+
+# Ver en qué branch estoy
+git branch
