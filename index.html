@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJTHGSN6');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JG7GJ1X13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7JG7GJ1X13');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Genaro Fuenzalida — Data Scientist</title>
+  <meta name="description" content="Genaro Fuenzalida — Data Scientist with 4+ years of experience building dashboards, ETL pipelines and data tools for companies across LATAM.">
+  <link rel="icon" type="image/x-icon" href="ico/letter-g2.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -225,6 +245,12 @@
   </style>
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJTHGSN6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
 <div class="page">
 
   <!-- HEADER -->
@@ -238,9 +264,9 @@
       data useful — not just accurate.
     </p>
     <nav class="links">
-      <a href="https://github.com/genarofnz" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/genarofuenzalida/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.behance.net/genarofuenzalida" target="_blank" rel="noopener">Behance</a>
+      <a id="btn-github" href="https://github.com/genarofnz" target="_blank" rel="noopener">GitHub</a>
+      <a id="btn-linkedin" href="https://www.linkedin.com/in/genarofuenzalida/" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="btn-behance" href="https://www.behance.net/genarofuenzalida" target="_blank" rel="noopener">Behance</a>
     </nav>
   </header>
 
@@ -351,7 +377,7 @@
         <span class="cert-issuer">Instituto Data Science · 2026</span>
       </div>
       <div class="cert-item">
-        <span class="cert-name">Studied Computer Science · UNGS</span>
+        <span class="cert-name">Computer Science Technician</span>
         <span class="cert-issuer">UNGS · 2021–2024</span>
       </div>
       <div class="cert-item">
@@ -379,6 +405,22 @@
     <span class="footer-copy">genarofuenzalida.ar</span>
   </footer>
 
+
 </div>
+
+<script>
+  // Click tracking — GA4 events
+  [
+    { id: 'btn-github',   event: 'click_github',   label: 'GitHub' },
+    { id: 'btn-linkedin', event: 'click_linkedin',  label: 'LinkedIn' },
+    { id: 'btn-behance',  event: 'click_behance',   label: 'Behance' },
+  ].forEach(({ id, event, label }) => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => {
+      gtag('event', event, { event_category: 'link', event_label: label, value: 1 });
+    });
+  });
+</script>
+
 </body>
 </html>
